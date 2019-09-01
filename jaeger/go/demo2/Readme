@@ -1,0 +1,7 @@
+go run jaeger/go/demo2/formatter/formatter.go
+go run jaeger/go/demo2/publisher/publisher.go
+go run jaeger/go/demo2/client/hello.go Bryan
+curl 'http://localhost:8081/format?helloTo=uyt'
+
+demo2_1,demo2_2为上层调用rpc
+demo2_3,demo2_4为直接调用rpc的服务
